@@ -10,8 +10,7 @@ test('getting started should contain table of contents', async ({ page }) => {
   console.log(await playwrightDev.tocList.allTextContents());
 
   await expect(playwrightDev.tocList).toHaveText(
-    // data.HowToInstall, data.WhatisInstalled, data.HowToRunExample, data.HowToOpenReport,
-    // data.AssertionFixturesLocators, data.RunSingleTest, data.TestwithCodegen, data.TraceYourTests //Was playing around with data
+    // data.HowToInstall, data.WhatisInstalled, data.HowToRunExample, data.HowToOpenReport //Was playing around with data
     data.testData 
   );
 });
